@@ -1,13 +1,16 @@
 {
   "name": "rescript-project-template",
+  "namespace": true,
   "sources": {
     "dir": "src",
     "subdirs": true
   },
   "package-specs": {
-    "module": "commonjs",
+    "module": "es6",
     "in-source": true
   },
-  "suffix": ".bs.js",
-  "bs-dependencies": []
+  "suffix": ".mjs",
+  "jsx": { "version": 4, "mode": "automatic" },
+  "bs-dependencies": ["@rescript/core", "@rescript/react"],
+  "bsc-flags": ["-open RescriptCore"]
 }

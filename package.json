@@ -1,7 +1,11 @@
 {
-  "name": "rescript-project-template",
+  "name": "github-actions-dashboard",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "res:build": "rescript",
     "res:clean": "rescript clean",
     "res:dev": "rescript build -w"
@@ -9,9 +13,32 @@
   "keywords": [
     "rescript"
   ],
-  "author": "",
+  "contributors": [
+    {
+      "name": "Julien Elbaz",
+      "email": "elbywan@hotmail.com",
+      "url": "http://github.com/elbywan"
+    },
+    {
+      "name": "Valentin D. Pinkman",
+      "email": "valentin.d.pinkman@icloud.com",
+      "url": "http://github.com/valpinkman"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
-    "rescript": "*"
+    "@octokit/rest": "^19.0.7",
+    "@rescript/core": "^0.1.0",
+    "@rescript/react": "^0.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.1.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "rescript": "*",
+    "tailwindcss": "^3.2.6",
+    "vite": "^4.1.1"
   }
 }
