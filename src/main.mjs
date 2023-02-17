@@ -7,6 +7,13 @@ import * as Hello$RescriptProjectTemplate from "./components/Hello.mjs";
 import "./index.css";
 ;
 
+((async function (param) {
+        var request = await fetch("https://jsonplaceholder.typicode.com/posts/1").then(function (prim) {
+              return prim.json();
+            });
+        console.log(request);
+      })(undefined));
+
 var rootElement = document.querySelector("#root");
 
 if (!(rootElement == null)) {

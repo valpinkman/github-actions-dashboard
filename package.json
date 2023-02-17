@@ -27,14 +27,15 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@glennsl/rescript-fetch": "^0.1.4",
     "@octokit/rest": "^19.0.7",
-    "@rescript/core": "^0.1.0",
     "@rescript/react": "^0.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.1.0",
+    "@ryyppy/rescript-promise": "^2.1.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "rescript": "*",
