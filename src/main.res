@@ -1,8 +1,6 @@
 open Fetch
 open Promise
 
-%%raw(`import "./index.css";`)
-
 (
   async () => {
     let request = await get("https://jsonplaceholder.typicode.com/posts/1")->then(Response.json)
@@ -15,7 +13,7 @@ open Promise
 switch ReactDOM.querySelector("#root") {
 | Some(rootElement) => {
     let root = ReactDOM.Client.createRoot(rootElement)
-    ReactDOM.Client.Root.render(root, <Hello />)
+    ReactDOM.Client.Root.render(root, <Root />)
   }
 
 | None => ()

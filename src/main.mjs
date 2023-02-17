@@ -2,10 +2,7 @@
 
 import * as Client from "react-dom/client";
 import * as JsxRuntime from "react/jsx-runtime";
-import * as Hello$RescriptProjectTemplate from "./components/Hello.mjs";
-
-import "./index.css";
-;
+import * as Root$RescriptProjectTemplate from "./components/Root.mjs";
 
 ((async function (param) {
         var request = await fetch("https://jsonplaceholder.typicode.com/posts/1").then(function (prim) {
@@ -18,7 +15,7 @@ var rootElement = document.querySelector("#root");
 
 if (!(rootElement == null)) {
   var root = Client.createRoot(rootElement);
-  root.render(JsxRuntime.jsx(Hello$RescriptProjectTemplate.make, {}));
+  root.render(JsxRuntime.jsx(Root$RescriptProjectTemplate.make, {}));
 }
 
 export {
